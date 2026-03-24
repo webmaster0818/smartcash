@@ -15,10 +15,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className="antialiased">
-        <header className="bg-primary-600 text-white p-4">
+        <header className="bg-primary-600 text-white p-4 md:p-6">
           <div className="container mx-auto">
-            <h1 className="text-2xl font-bold">スマートキャッシュ</h1>
-            <p className="text-sm">先払い買取比較サイト</p>
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold">スマートキャッシュ</h1>
+            <p className="text-xs md:text-sm">先払い買取比較サイト</p>
           </div>
         </header>
         <main className="container mx-auto px-4 py-8">

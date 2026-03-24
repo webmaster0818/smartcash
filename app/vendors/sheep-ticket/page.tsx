@@ -2,37 +2,37 @@ export default function SheepTicket() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="text-6xl">🐑</div>
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <div className="flex items-center gap-3 md:gap-4 mb-4">
+          <div className="text-4xl md:text-6xl">🐑</div>
           <div>
-            <h1 className="text-3xl font-bold mb-2">シープチケット</h1>
-            <p className="text-gray-700">業界最高水準の換金率と最短5分振込を実現</p>
+            <h1 className="text-xl md:text-2xl lg:text-xl md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 leading-tight">シープチケット</h1>
+            <p className="text-sm md:text-base text-gray-700">業界最高水準の換金率と最短5分振込を実現</p>
           </div>
         </div>
         <div className="grid md:grid-cols-4 gap-4 mt-6">
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">総合評価</div>
-            <div className="text-2xl font-bold text-yellow-500">⭐⭐⭐⭐⭐</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">総合評価</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-yellow-500">⭐⭐⭐⭐⭐</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">換金率</div>
-            <div className="text-2xl font-bold text-green-600">最大95%</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">換金率</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-green-600">最大95%</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">振込時間</div>
-            <div className="text-2xl font-bold text-red-600">最短5分</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">振込時間</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-red-600">最短5分</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">営業時間</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">営業時間</div>
             <div className="text-lg font-bold">24時間</div>
           </div>
         </div>
       </section>
 
       {/* 基本情報 */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">基本情報</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">基本情報</h2>
         <table className="w-full text-sm">
           <tbody className="divide-y">
             <tr>
@@ -70,7 +70,7 @@ export default function SheepTicket() {
       {/* メリット・デメリット */}
       <section className="grid md:grid-cols-2 gap-6">
         <div className="bg-green-50 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4 text-green-700">✓ メリット</h2>
+          <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-green-700">✓ メリット</h2>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-green-600 mt-1">✓</span>
@@ -99,7 +99,7 @@ export default function SheepTicket() {
           </ul>
         </div>
         <div className="bg-red-50 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4 text-red-700">✗ デメリット</h2>
+          <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-red-700">✗ デメリット</h2>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-red-600 mt-1">✗</span>
@@ -122,9 +122,9 @@ export default function SheepTicket() {
       </section>
 
       {/* 利用の流れ */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">利用の流れ</h2>
-        <div className="space-y-4">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">利用の流れ</h2>
+        <div className="space-y-3 md:space-y-4">
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
             <div className="flex-1">
@@ -165,7 +165,7 @@ export default function SheepTicket() {
 
       {/* こんな人におすすめ */}
       <section className="bg-primary-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">こんな人におすすめ</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">こんな人におすすめ</h2>
         <ul className="space-y-2">
           <li className="flex items-start gap-2">
             <span className="text-primary-600">✓</span>
@@ -187,33 +187,33 @@ export default function SheepTicket() {
       </section>
 
       {/* 口コミ */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">口コミ・評判</h2>
-        <div className="space-y-4">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">口コミ・評判</h2>
+        <div className="space-y-3 md:space-y-4">
           <div className="border-l-4 border-green-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">30代 男性</span>
+              <span className="text-xs md:text-sm text-gray-600">30代 男性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               本当に5分で振り込まれました！換金率も95%で満足です。対応も丁寧でした。
             </p>
           </div>
           <div className="border-l-4 border-green-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">40代 女性</span>
+              <span className="text-xs md:text-sm text-gray-600">40代 女性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               深夜でも対応してくれて助かりました。初めての利用でしたが、丁寧に説明してくれて安心できました。
             </p>
           </div>
           <div className="border-l-4 border-yellow-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">20代 男性</span>
+              <span className="text-xs md:text-sm text-gray-600">20代 男性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               換金率は高かったですが、郵送費用が自己負担だったのが少し残念でした。でも全体的には満足です。
             </p>
           </div>
@@ -221,22 +221,22 @@ export default function SheepTicket() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-sm">他のおすすめ業者も見る</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">総合ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">他のおすすめ業者も見る</p>
         </a>
-        <a href="/ranking/speed" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">最短振込ランキング →</h3>
-          <p className="text-gray-600 text-sm">最速振込の業者を比較</p>
+        <a href="/ranking/speed" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">最短振込ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">最速振込の業者を比較</p>
         </a>
-        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">先払い買取とは →</h3>
-          <p className="text-gray-600 text-sm">仕組み・流れをわかりやすく解説</p>
+        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">先払い買取とは →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">仕組み・流れをわかりやすく解説</p>
         </a>
-        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">悪徳業者の見分け方 →</h3>
-          <p className="text-gray-600 text-sm">安全に利用するためのチェックリスト</p>
+        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">悪徳業者の見分け方 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">安全に利用するためのチェックリスト</p>
         </a>
       </section>
     </div>

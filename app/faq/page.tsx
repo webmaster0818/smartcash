@@ -132,16 +132,16 @@ export default function FAQ() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">よくある質問（FAQ）【2026年最新版】</h1>
-        <p className="text-gray-700">
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">よくある質問（FAQ）【2026年最新版】</h1>
+        <p className="text-sm md:text-base text-gray-700">
           先払い買取に関するよくある質問とその回答をまとめました。疑問や不安がある方はこちらをご覧ください。
         </p>
       </section>
 
       {/* 目次 */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-xl font-bold mb-4">目次</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4">目次</h2>
         <div className="grid md:grid-cols-2 gap-2">
           {faqs.map((category, index) => (
             <a key={index} href={`#category-${index}`} className="text-primary-600 hover:underline">
@@ -153,13 +153,13 @@ export default function FAQ() {
 
       {/* FAQ */}
       {faqs.map((category, catIndex) => (
-        <section key={catIndex} id={`category-${catIndex}`} className="bg-white rounded-lg shadow-md p-6">
-          <h2 className="text-2xl font-bold mb-6">{category.category}</h2>
-          <div className="space-y-6">
+        <section key={catIndex} id={`category-${catIndex}`} className="bg-white rounded-lg shadow-md p-4 md:p-6">
+          <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-6">{category.category}</h2>
+          <div className="space-y-4 md:space-y-6">
             {category.questions.map((item, qIndex) => (
-              <div key={qIndex} className="border-l-4 border-primary-400 pl-4">
+              <div key={qIndex} className="border-l-4 border-primary-400 pl-3 md:pl-4">
                 <h3 className="font-bold text-lg mb-2 text-primary-700">Q. {item.q}</h3>
-                <p className="text-gray-700">{item.a}</p>
+                <p className="text-sm md:text-base text-gray-700">{item.a}</p>
               </div>
             ))}
           </div>
@@ -168,23 +168,23 @@ export default function FAQ() {
 
       {/* それでも解決しない場合 */}
       <section className="bg-yellow-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">それでも解決しない場合</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">それでも解決しない場合</h2>
         <div className="space-y-3">
           <div>
-            <h3 className="font-bold mb-2">1. 業者に直接問い合わせ</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">1. 業者に直接問い合わせ</h3>
             <p className="text-sm text-gray-700">
               公式サイトのお問い合わせフォーム、電話、LINEなどで直接業者に質問してください。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">2. 消費生活センターに相談</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">2. 消費生活センターに相談</h3>
             <p className="text-sm text-gray-700">
               <strong>連絡先:</strong> 188（消費者ホットライン）<br />
               <strong>相談時間:</strong> 平日9:00〜17:00
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">3. 警察に相談</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">3. 警察に相談</h3>
             <p className="text-sm text-gray-700">
               詐欺の疑いがある場合は、最寄りの警察署に相談してください。
             </p>
@@ -193,22 +193,22 @@ export default function FAQ() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">おすすめ業者ランキング →</h3>
-          <p className="text-gray-600 text-sm">安全に利用できる業者TOP10</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">おすすめ業者ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">安全に利用できる業者TOP10</p>
         </a>
-        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">先払い買取とは →</h3>
-          <p className="text-gray-600 text-sm">仕組み・流れをわかりやすく解説</p>
+        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">先払い買取とは →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">仕組み・流れをわかりやすく解説</p>
         </a>
-        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">悪徳業者の見分け方 →</h3>
-          <p className="text-gray-600 text-sm">安全に利用するためのチェックリスト</p>
+        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">悪徳業者の見分け方 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">安全に利用するためのチェックリスト</p>
         </a>
-        <a href="/guide/merit" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">メリット・デメリット →</h3>
-          <p className="text-gray-600 text-sm">詳しく解説</p>
+        <a href="/guide/merit" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">メリット・デメリット →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">詳しく解説</p>
         </a>
       </section>
     </div>

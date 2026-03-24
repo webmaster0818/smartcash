@@ -2,37 +2,37 @@ export default function Reseticke() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <div className="flex items-center gap-4 mb-4">
-          <div className="text-6xl">🔄</div>
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <div className="flex items-center gap-3 md:gap-4 mb-4">
+          <div className="text-4xl md:text-6xl">🔄</div>
           <div>
-            <h1 className="text-3xl font-bold mb-2">リセチケット</h1>
-            <p className="text-gray-700">初回利用者に優しいWEB完結サービス</p>
+            <h1 className="text-xl md:text-2xl lg:text-xl md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 leading-tight">リセチケット</h1>
+            <p className="text-sm md:text-base text-gray-700">初回利用者に優しいWEB完結サービス</p>
           </div>
         </div>
         <div className="grid md:grid-cols-4 gap-4 mt-6">
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">総合評価</div>
-            <div className="text-2xl font-bold text-yellow-500">⭐⭐⭐⭐</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">総合評価</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-yellow-500">⭐⭐⭐⭐</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">換金率</div>
-            <div className="text-2xl font-bold text-green-600">最大88%</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">換金率</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-green-600">最大88%</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">振込時間</div>
-            <div className="text-2xl font-bold text-red-600">最短10分</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">振込時間</div>
+            <div className="text-lg md:text-xl lg:text-2xl font-bold text-red-600">最短10分</div>
           </div>
           <div className="bg-white p-4 rounded-lg shadow">
-            <div className="text-sm text-gray-600 mb-1">営業時間</div>
+            <div className="text-xs md:text-sm text-gray-600 mb-1">営業時間</div>
             <div className="text-lg font-bold">9:00-22:00</div>
           </div>
         </div>
       </section>
 
       {/* 基本情報 */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">基本情報</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">基本情報</h2>
         <table className="w-full text-sm">
           <tbody className="divide-y">
             <tr>
@@ -74,7 +74,7 @@ export default function Reseticke() {
       {/* メリット・デメリット */}
       <section className="grid md:grid-cols-2 gap-6">
         <div className="bg-green-50 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4 text-green-700">✓ メリット</h2>
+          <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-green-700">✓ メリット</h2>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-green-600 mt-1">✓</span>
@@ -103,7 +103,7 @@ export default function Reseticke() {
           </ul>
         </div>
         <div className="bg-red-50 rounded-lg p-6">
-          <h2 className="text-xl font-bold mb-4 text-red-700">✗ デメリット</h2>
+          <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-red-700">✗ デメリット</h2>
           <ul className="space-y-2">
             <li className="flex items-start gap-2">
               <span className="text-red-600 mt-1">✗</span>
@@ -126,9 +126,9 @@ export default function Reseticke() {
       </section>
 
       {/* 利用の流れ */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">利用の流れ</h2>
-        <div className="space-y-4">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">利用の流れ</h2>
+        <div className="space-y-3 md:space-y-4">
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-12 h-12 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-xl">1</div>
             <div className="flex-1">
@@ -169,7 +169,7 @@ export default function Reseticke() {
 
       {/* こんな人におすすめ */}
       <section className="bg-primary-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">こんな人におすすめ</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">こんな人におすすめ</h2>
         <ul className="space-y-2">
           <li className="flex items-start gap-2">
             <span className="text-primary-600">✓</span>
@@ -191,33 +191,33 @@ export default function Reseticke() {
       </section>
 
       {/* 口コミ */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">口コミ・評判</h2>
-        <div className="space-y-4">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">口コミ・評判</h2>
+        <div className="space-y-3 md:space-y-4">
           <div className="border-l-4 border-green-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">20代 男性</span>
+              <span className="text-xs md:text-sm text-gray-600">20代 男性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               初回利用で換金率が高かったので満足です。WEBで完結できるのも便利でした。
             </p>
           </div>
           <div className="border-l-4 border-green-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">30代 女性</span>
+              <span className="text-xs md:text-sm text-gray-600">30代 女性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               Amazonギフト券の換金率が他より高かったので選びました。対応も丁寧でした。
             </p>
           </div>
           <div className="border-l-4 border-yellow-400 pl-4 py-2">
             <div className="flex items-center gap-2 mb-2">
               <span className="text-yellow-500">⭐⭐⭐⭐</span>
-              <span className="text-sm text-gray-600">40代 男性</span>
+              <span className="text-xs md:text-sm text-gray-600">40代 男性</span>
             </div>
-            <p className="text-gray-700">
+            <p className="text-sm md:text-base text-gray-700">
               営業時間が22時までなので、深夜は利用できないのが残念でした。でもサービスは良かったです。
             </p>
           </div>
@@ -225,22 +225,22 @@ export default function Reseticke() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-sm">他のおすすめ業者も見る</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">総合ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">他のおすすめ業者も見る</p>
         </a>
-        <a href="/ranking/rate" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">高換金率ランキング →</h3>
-          <p className="text-gray-600 text-sm">換金率が高い業者を比較</p>
+        <a href="/ranking/rate" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">高換金率ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">換金率が高い業者を比較</p>
         </a>
-        <a href="/vendors/sheep-ticket" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">シープチケット →</h3>
-          <p className="text-gray-600 text-sm">業界最高水準の換金率95%</p>
+        <a href="/vendors/sheep-ticket" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">シープチケット →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">業界最高水準の換金率95%</p>
         </a>
-        <a href="/item/amazon-gift" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">Amazonギフト券買取 →</h3>
-          <p className="text-gray-600 text-sm">Amazonギフト券の買取相場と業者</p>
+        <a href="/item/amazon-gift" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">Amazonギフト券買取 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">Amazonギフト券の買取相場と業者</p>
         </a>
       </section>
     </div>

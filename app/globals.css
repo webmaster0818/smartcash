@@ -16,6 +16,15 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  font-size: 16px; /* スマホ最適 */
+  line-height: 1.7; /* 読みやすい行間 */
+}
+
+/* スマホ対応：最小フォントサイズ */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
 }
 
 @layer utilities {

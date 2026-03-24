@@ -50,9 +50,9 @@ export default function RateRanking() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">高換金率ランキング【2026年最新版】</h1>
-        <p className="text-gray-700">
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">高換金率ランキング【2026年最新版】</h1>
+        <p className="text-sm md:text-base text-gray-700">
           少しでも高く換金したい方向けに、換金率90%以上の先払い買取業者をランキング形式でご紹介します。
         </p>
       </section>
@@ -116,36 +116,36 @@ export default function RateRanking() {
       </section>
 
       {/* ランキング詳細 */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-bold">ランキング詳細</h2>
+      <section className="space-y-4 md:space-y-6">
+        <h2 className="text-lg md:text-xl lg:text-2xl font-bold">ランキング詳細</h2>
         
         {vendors.map((vendor) => (
-          <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-6">
+          <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-4 md:p-6">
             <div className="flex items-start gap-4">
-              <div className="text-4xl font-bold text-primary-600">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-600">
                 {vendor.rank === 1 && '🥇'}
                 {vendor.rank === 2 && '🥈'}
                 {vendor.rank === 3 && '🥉'}
                 {vendor.rank > 3 && vendor.rank}
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">{vendor.name}</h3>
-                <div className="grid md:grid-cols-3 gap-4 mb-4">
+                <h3 className="text-lg md:text-xl lg:text-2xl text-base md:text-lg font-bold mb-2">{vendor.name}</h3>
+                <div className="grid md:grid-cols-3 gap-3 md:gap-4 mb-4">
                   <div>
-                    <span className="text-gray-600 text-sm">最大換金率</span>
+                    <span className="text-gray-600 text-xs md:text-sm">最大換金率</span>
                     <div className="text-lg font-bold text-green-600">{vendor.rate}</div>
                   </div>
                   <div>
-                    <span className="text-gray-600 text-sm">最低換金率</span>
+                    <span className="text-gray-600 text-xs md:text-sm">最低換金率</span>
                     <div className="text-lg font-bold text-gray-600">{vendor.minRate}</div>
                   </div>
                   <div>
-                    <span className="text-gray-600 text-sm">振込時間</span>
+                    <span className="text-gray-600 text-xs md:text-sm">振込時間</span>
                     <div className="text-lg font-bold">{vendor.speed}</div>
                   </div>
                 </div>
                 <div className="mb-4">
-                  <h4 className="font-bold mb-2">特徴</h4>
+                  <h4 className="text-base md:text-lg font-bold mb-2">特徴</h4>
                   <ul className="space-y-1">
                     {vendor.features.map((feature, index) => (
                       <li key={index} className="text-gray-700 flex items-center gap-2">
@@ -157,7 +157,7 @@ export default function RateRanking() {
                 </div>
                 <a 
                   href={vendor.link}
-                  className="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
+                  className="inline-block bg-primary-600 text-white px-4 md:px-6 py-3 md:py-2 rounded-lg text-sm md:text-base min-h-[44px] flex items-center justify-center hover:bg-primary-700 transition"
                 >
                   詳細を見る
                 </a>
@@ -168,8 +168,8 @@ export default function RateRanking() {
       </section>
 
       {/* 換金率の相場 */}
-      <section className="bg-gray-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">先払い買取の換金率相場</h2>
+      <section className="bg-gray-50 rounded-lg p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">先払い買取の換金率相場</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm bg-white rounded-lg">
             <thead className="bg-gray-100">
@@ -202,30 +202,30 @@ export default function RateRanking() {
             </tbody>
           </table>
         </div>
-        <p className="text-gray-600 text-sm mt-4">
+        <p className="text-gray-600 text-xs md:text-sm mt-4">
           ※ 換金率は時期や在庫状況により変動します。詳細は各業者にお問い合わせください。
         </p>
       </section>
 
       {/* よくある質問 */}
-      <section className="bg-gray-50 rounded-lg p-6 mt-6">
-        <h2 className="text-2xl font-bold mb-4">よくある質問</h2>
-        <div className="space-y-4">
+      <section className="bg-gray-50 rounded-lg p-4 md:p-6 mt-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">よくある質問</h2>
+        <div className="space-y-3 md:space-y-4">
           <div>
-            <h3 className="font-bold mb-2">Q. なぜ業者によって換金率が違うのですか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. なぜ業者によって換金率が違うのですか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. 業者の仕入れルート、在庫状況、運営コストなどによって換金率が変わります。複数業者を比較して最も高い換金率の業者を選びましょう。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Q. 換金率95%は本当ですか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. 換金率95%は本当ですか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. JCBギフトカードなどの人気商品券であれば、実際に95%の換金率で買取してもらえます。ただし、商品券の種類や金額によって換金率は変動します。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Q. 初回利用者でも高換金率で利用できますか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. 初回利用者でも高換金率で利用できますか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. シープチケット、タートルチケット、リセチケットなどは初回利用者でも高換金率で利用できます。
             </p>
           </div>
@@ -233,22 +233,22 @@ export default function RateRanking() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-sm">おすすめの先払い買取業者TOP10</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">総合ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP10</p>
         </a>
-        <a href="/ranking/speed" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">最短振込ランキング →</h3>
-          <p className="text-gray-600 text-sm">最短5分で振込完了する業者</p>
+        <a href="/ranking/speed" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">最短振込ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">最短5分で振込完了する業者</p>
         </a>
-        <a href="/item/jcb-gift" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">JCBギフトカード買取 →</h3>
-          <p className="text-gray-600 text-sm">JCBギフトカードの買取相場と業者</p>
+        <a href="/item/jcb-gift" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">JCBギフトカード買取 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">JCBギフトカードの買取相場と業者</p>
         </a>
-        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">先払い買取とは →</h3>
-          <p className="text-gray-600 text-sm">仕組み・流れをわかりやすく解説</p>
+        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">先払い買取とは →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">仕組み・流れをわかりやすく解説</p>
         </a>
       </section>
     </div>

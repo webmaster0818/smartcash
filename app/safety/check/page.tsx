@@ -15,9 +15,9 @@ export default function SafetyCheck() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">先払い買取の悪徳業者の見分け方｜10項目チェックリスト【2026年最新版】</h1>
-        <p className="text-gray-700">
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">先払い買取の悪徳業者の見分け方｜10項目チェックリスト【2026年最新版】</h1>
+        <p className="text-sm md:text-base text-gray-700">
           詐欺被害に遭わないために！安全な業者を見分けるための10項目チェックリストと、実際のトラブル事例を詳しく解説します。
         </p>
       </section>
@@ -28,14 +28,14 @@ export default function SafetyCheck() {
         <p className="text-gray-700 mb-2">
           <strong>1つでも「危険」に該当したら、絶対に利用しないでください！</strong>
         </p>
-        <p className="text-gray-700">
+        <p className="text-sm md:text-base text-gray-700">
           悪徳業者は巧妙に装っています。利用前に必ず以下のチェックリストで確認しましょう。
         </p>
       </section>
 
       {/* チェックリスト */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">10項目チェックリスト</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">10項目チェックリスト</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="bg-gray-100">
@@ -61,16 +61,16 @@ export default function SafetyCheck() {
       </section>
 
       {/* チェック項目詳細 */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-bold">チェック項目の詳細</h2>
+      <section className="space-y-4 md:space-y-6">
+        <h2 className="text-lg md:text-xl lg:text-2xl font-bold">チェック項目の詳細</h2>
         
         {/* 1. 古物商許可番号 */}
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-bold mb-4">1. 古物商許可番号の確認【最重要】</h3>
+        <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
+          <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4">1. 古物商許可番号の確認【最重要】</h3>
           <div className="space-y-3">
             <div>
-              <h4 className="font-bold mb-2 text-green-700">✅ 安全な業者</h4>
-              <p className="text-gray-700">
+              <h4 className="text-base md:text-lg font-bold mb-2 text-green-700">✅ 安全な業者</h4>
+              <p className="text-sm md:text-base text-gray-700">
                 公式サイトのフッターまたは「会社概要」「特定商取引法に基づく表記」ページに古物商許可番号が明記されている。
               </p>
               <div className="bg-green-50 p-3 rounded mt-2">
@@ -80,7 +80,7 @@ export default function SafetyCheck() {
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-2 text-red-700">❌ 危険な業者</h4>
+              <h4 className="text-base md:text-lg font-bold mb-2 text-red-700">❌ 危険な業者</h4>
               <ul className="text-gray-700 space-y-1">
                 <li className="flex items-start gap-2">
                   <span className="text-red-600">•</span>
@@ -96,8 +96,8 @@ export default function SafetyCheck() {
                 </li>
               </ul>
             </div>
-            <div className="bg-blue-50 p-4 rounded">
-              <h4 className="font-bold mb-2">💡 確認方法</h4>
+            <div className="bg-blue-50 p-3 md:p-4 rounded">
+              <h4 className="text-base md:text-lg font-bold mb-2">💡 確認方法</h4>
               <p className="text-gray-700 text-sm">
                 管轄の警察署に電話し、「古物商許可番号の確認をお願いします」と伝えれば、許可番号が実在するか教えてもらえます。
               </p>
@@ -106,11 +106,11 @@ export default function SafetyCheck() {
         </div>
 
         {/* 2. 運営会社情報 */}
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-bold mb-4">2. 運営会社情報の確認</h3>
+        <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
+          <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4">2. 運営会社情報の確認</h3>
           <div className="space-y-3">
             <div>
-              <h4 className="font-bold mb-2 text-green-700">✅ 確認すべき5つの項目</h4>
+              <h4 className="text-base md:text-lg font-bold mb-2 text-green-700">✅ 確認すべき5つの項目</h4>
               <ul className="text-gray-700 space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-green-600">1.</span>
@@ -134,8 +134,8 @@ export default function SafetyCheck() {
                 </li>
               </ul>
             </div>
-            <div className="bg-blue-50 p-4 rounded">
-              <h4 className="font-bold mb-2">💡 実在確認の方法</h4>
+            <div className="bg-blue-50 p-3 md:p-4 rounded">
+              <h4 className="text-base md:text-lg font-bold mb-2">💡 実在確認の方法</h4>
               <p className="text-gray-700 text-sm mb-2">
                 <a href="https://www.houjin-bangou.nta.go.jp/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
                   国税庁法人番号公表サイト
@@ -147,21 +147,21 @@ export default function SafetyCheck() {
         </div>
 
         {/* 3. 換金率の妥当性 */}
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <h3 className="text-xl font-bold mb-4">3. 換金率の妥当性</h3>
+        <div className="bg-white rounded-lg shadow-md p-4 md:p-6">
+          <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4">3. 換金率の妥当性</h3>
           <div className="space-y-3">
             <div>
-              <h4 className="font-bold mb-2 text-green-700">✅ 安全な換金率</h4>
+              <h4 className="text-base md:text-lg font-bold mb-2 text-green-700">✅ 安全な換金率</h4>
               <div className="bg-green-50 p-4 rounded">
                 <ul className="space-y-2">
                   <li><strong>先払い買取:</strong> 60〜80%</li>
                   <li><strong>郵送買取:</strong> 80〜95%</li>
                 </ul>
-                <p className="text-sm text-gray-600 mt-2">※ この範囲内であれば妥当です。</p>
+                <p className="text-xs md:text-sm text-gray-600 mt-2">※ この範囲内であれば妥当です。</p>
               </div>
             </div>
             <div>
-              <h4 className="font-bold mb-2 text-red-700">❌ 危険な換金率</h4>
+              <h4 className="text-base md:text-lg font-bold mb-2 text-red-700">❌ 危険な換金率</h4>
               <ul className="text-gray-700 space-y-2">
                 <li className="flex items-start gap-2">
                   <span className="text-red-600">•</span>
@@ -178,11 +178,11 @@ export default function SafetyCheck() {
       </section>
 
       {/* 実際のトラブル事例 */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">実際のトラブル事例</h2>
-        <div className="space-y-4">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">実際のトラブル事例</h2>
+        <div className="space-y-3 md:space-y-4">
           <div className="border-l-4 border-red-400 pl-4 py-2">
-            <h3 className="font-bold mb-2">事例1: 振込されない詐欺</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">事例1: 振込されない詐欺</h3>
             <p className="text-gray-700 text-sm mb-2">
               商品を先に郵送してしまい、その後業者と連絡が取れなくなった。振込もされず、商品も戻ってこない。
             </p>
@@ -191,7 +191,7 @@ export default function SafetyCheck() {
             </p>
           </div>
           <div className="border-l-4 border-red-400 pl-4 py-2">
-            <h3 className="font-bold mb-2">事例2: 高額なキャンセル料を請求</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">事例2: 高額なキャンセル料を請求</h3>
             <p className="text-gray-700 text-sm mb-2">
               キャンセルしたら、キャンセル料3万円を請求された。
             </p>
@@ -200,7 +200,7 @@ export default function SafetyCheck() {
             </p>
           </div>
           <div className="border-l-4 border-red-400 pl-4 py-2">
-            <h3 className="font-bold mb-2">事例3: 個人情報の悪用</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">事例3: 個人情報の悪用</h3>
             <p className="text-gray-700 text-sm mb-2">
               怪しい業者に本人確認書類を送信したら、身に覚えのない請求書が届いた。
             </p>
@@ -213,10 +213,10 @@ export default function SafetyCheck() {
 
       {/* トラブルに遭った場合の対処法 */}
       <section className="bg-yellow-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">トラブルに遭った場合の対処法</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">トラブルに遭った場合の対処法</h2>
         <div className="space-y-3">
           <div>
-            <h3 className="font-bold mb-2">1. すぐに証拠を保存</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">1. すぐに証拠を保存</h3>
             <ul className="text-gray-700 space-y-1 text-sm">
               <li>• メールやLINEのやり取り</li>
               <li>• 振込明細</li>
@@ -225,20 +225,20 @@ export default function SafetyCheck() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold mb-2">2. 業者に連絡</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">2. 業者に連絡</h3>
             <p className="text-gray-700 text-sm">
               まずは業者に問い合わせ。記録に残るメール・LINEで連絡しましょう。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">3. 消費生活センターに相談</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">3. 消費生活センターに相談</h3>
             <p className="text-gray-700 text-sm">
               <strong>連絡先:</strong> 188（消費者ホットライン）<br />
               <strong>相談時間:</strong> 平日9:00〜17:00
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">4. 警察に相談</h3>
+            <h3 className="text-base md:text-lg font-bold mb-2">4. 警察に相談</h3>
             <p className="text-gray-700 text-sm">
               詐欺の疑いがある場合は、最寄りの警察署に相談。
             </p>
@@ -248,7 +248,7 @@ export default function SafetyCheck() {
 
       {/* まとめ */}
       <section className="bg-primary-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">まとめ：安全に利用するための5つのルール</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">まとめ：安全に利用するための5つのルール</h2>
         <ul className="space-y-2">
           <li className="flex items-start gap-2">
             <span className="text-primary-600 font-bold">1.</span>
@@ -274,22 +274,22 @@ export default function SafetyCheck() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/safety" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">安全性重視ランキング →</h3>
-          <p className="text-gray-600 text-sm">古物商許可取得済みの安全な業者</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/safety" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">安全性重視ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">古物商許可取得済みの安全な業者</p>
         </a>
-        <a href="/safety/legal" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">違法性について →</h3>
-          <p className="text-gray-600 text-sm">法的根拠と金融庁の見解</p>
+        <a href="/safety/legal" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">違法性について →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">法的根拠と金融庁の見解</p>
         </a>
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-sm">おすすめの先払い買取業者TOP10</p>
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">総合ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP10</p>
         </a>
-        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">先払い買取とは →</h3>
-          <p className="text-gray-600 text-sm">仕組み・流れをわかりやすく解説</p>
+        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">先払い買取とは →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">仕組み・流れをわかりやすく解説</p>
         </a>
       </section>
     </div>

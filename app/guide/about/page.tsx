@@ -2,16 +2,16 @@ export default function About() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">先払い買取とは？仕組み・流れを徹底解説【2026年最新版】</h1>
-        <p className="text-gray-700">
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">先払い買取とは？仕組み・流れを徹底解説【2026年最新版】</h1>
+        <p className="text-sm md:text-base text-gray-700">
           商品券・ギフトカードを売却し、商品を送る前に代金を受け取れる「先払い買取」の仕組み・流れ・メリットをわかりやすく解説します。
         </p>
       </section>
 
       {/* 先払い買取とは */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">先払い買取とは</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">先払い買取とは</h2>
         <p className="text-gray-700 mb-4">
           先払い買取とは、<strong>商品券・ギフトカードを売却し、商品を送る「前」に代金を受け取れるサービス</strong>です。
         </p>
@@ -19,16 +19,16 @@ export default function About() {
           通常の買取（郵送買取）では「商品を送った後」に振込されますが、先払い買取では「商品を送る前」に振込されます。
         </p>
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-4">
-          <p className="font-bold mb-2">💡 ポイント</p>
-          <p className="text-gray-700">
+          <p className="text-base md:text-lg font-bold mb-2">💡 ポイント</p>
+          <p className="text-sm md:text-base text-gray-700">
             「先払い」という名前ですが、実際には「先に振込を受け取る」という意味です。商品を送る前に現金を手に入れられるため、今すぐ現金が必要な方に人気のサービスです。
           </p>
         </div>
       </section>
 
       {/* 通常の買取との違い */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">通常の買取との違い</h2>
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">通常の買取との違い</h2>
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead className="bg-gray-100">
@@ -67,24 +67,24 @@ export default function About() {
             </tbody>
           </table>
         </div>
-        <p className="text-gray-600 text-sm mt-4">
+        <p className="text-gray-600 text-xs md:text-sm mt-4">
           ※ 先払い買取は「スピード重視」、通常の買取は「換金率重視」という特徴があります。
         </p>
       </section>
 
       {/* 利用の流れ */}
-      <section className="bg-white rounded-lg shadow-md p-6">
-        <h2 className="text-2xl font-bold mb-4">先払い買取の流れ（5ステップ）</h2>
-        <div className="space-y-6">
+      <section className="bg-white rounded-lg shadow-md p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">先払い買取の流れ（5ステップ）</h2>
+        <div className="space-y-4 md:space-y-6">
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-2xl">1</div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold mb-2">申し込み・査定</h3>
+              <h3 className="text-base md:text-lg lg:text-base md:text-lg lg:text-xl text-base md:text-lg font-bold mb-2">申し込み・査定</h3>
               <p className="text-gray-700 mb-2">
                 公式サイトから申し込み。商品券の種類・金額・写真を送信して査定を受けます。
               </p>
               <div className="bg-gray-50 p-3 rounded">
-                <p className="text-sm text-gray-600">
+                <p className="text-xs md:text-sm text-gray-600">
                   <strong>必要なもの:</strong> 商品券の写真、本人確認書類
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function About() {
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-2xl">2</div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold mb-2">契約締結</h3>
+              <h3 className="text-base md:text-lg lg:text-base md:text-lg lg:text-xl text-base md:text-lg font-bold mb-2">契約締結</h3>
               <p className="text-gray-700 mb-2">
                 査定額に納得したら契約を締結。本人確認書類を提出し、契約内容を確認します。
               </p>
@@ -109,7 +109,7 @@ export default function About() {
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-2xl">3</div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold mb-2 text-green-700">振込（先払い）</h3>
+              <h3 className="text-base md:text-lg lg:text-base md:text-lg lg:text-xl text-base md:text-lg font-bold mb-2 text-green-700">振込（先払い）</h3>
               <p className="text-gray-700 mb-2">
                 <strong className="text-green-700">最短5分で指定口座に振込完了。</strong>商品を送る前に現金を受け取れます。
               </p>
@@ -124,7 +124,7 @@ export default function About() {
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-2xl">4</div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold mb-2">商品発送</h3>
+              <h3 className="text-base md:text-lg lg:text-base md:text-lg lg:text-xl text-base md:text-lg font-bold mb-2">商品発送</h3>
               <p className="text-gray-700 mb-2">
                 7〜30日以内にレターパックで商品を発送。追跡番号を業者に連絡します。
               </p>
@@ -139,8 +139,8 @@ export default function About() {
           <div className="flex gap-4">
             <div className="flex-shrink-0 w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold text-2xl">5</div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold mb-2">取引完了</h3>
-              <p className="text-gray-700">
+              <h3 className="text-base md:text-lg lg:text-base md:text-lg lg:text-xl text-base md:text-lg font-bold mb-2">取引完了</h3>
+              <p className="text-sm md:text-base text-gray-700">
                 業者が商品を受領し、追跡番号で配達完了を確認したら取引完了です。
               </p>
             </div>
@@ -150,10 +150,10 @@ export default function About() {
 
       {/* メリット・デメリット */}
       <section>
-        <h2 className="text-2xl font-bold mb-4">メリット・デメリット</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">メリット・デメリット</h2>
         <div className="grid md:grid-cols-2 gap-6">
           <div className="bg-green-50 rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4 text-green-700">✓ メリット</h3>
+            <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-green-700">✓ メリット</h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <span className="text-green-600 mt-1">✓</span>
@@ -178,7 +178,7 @@ export default function About() {
             </ul>
           </div>
           <div className="bg-red-50 rounded-lg p-6">
-            <h3 className="text-xl font-bold mb-4 text-red-700">✗ デメリット</h3>
+            <h3 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-red-700">✗ デメリット</h3>
             <ul className="space-y-2">
               <li className="flex items-start gap-2">
                 <span className="text-red-600 mt-1">✗</span>
@@ -210,7 +210,7 @@ export default function About() {
 
       {/* こんな人におすすめ */}
       <section className="bg-primary-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">こんな人におすすめ</h2>
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">こんな人におすすめ</h2>
         <ul className="space-y-2">
           <li className="flex items-start gap-2">
             <span className="text-primary-600">✓</span>
@@ -236,22 +236,22 @@ export default function About() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">おすすめ業者ランキング →</h3>
-          <p className="text-gray-600 text-sm">安全に利用できる業者TOP10</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">おすすめ業者ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">安全に利用できる業者TOP10</p>
         </a>
-        <a href="/guide/merit" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">メリット・デメリット →</h3>
-          <p className="text-gray-600 text-sm">詳しく解説</p>
+        <a href="/guide/merit" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">メリット・デメリット →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">詳しく解説</p>
         </a>
-        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">悪徳業者の見分け方 →</h3>
-          <p className="text-gray-600 text-sm">安全に利用するためのチェックリスト</p>
+        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">悪徳業者の見分け方 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">安全に利用するためのチェックリスト</p>
         </a>
-        <a href="/guide/comparison" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">他サービスとの違い →</h3>
-          <p className="text-gray-600 text-sm">Amazon買取・クレカ現金化などと比較</p>
+        <a href="/guide/comparison" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">他サービスとの違い →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">Amazon買取・クレカ現金化などと比較</p>
         </a>
       </section>
     </div>

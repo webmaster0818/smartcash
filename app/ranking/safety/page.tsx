@@ -50,9 +50,9 @@ export default function SafetyRanking() {
   return (
     <div className="space-y-8">
       {/* ヘッダー */}
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-8 rounded-lg">
-        <h1 className="text-3xl font-bold mb-4">安全性重視ランキング【2026年最新版】</h1>
-        <p className="text-gray-700">
+      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">安全性重視ランキング【2026年最新版】</h1>
+        <p className="text-sm md:text-base text-gray-700">
           古物商許可取得済み、運営実績が長く、安全に利用できる先払い買取業者をランキング形式でご紹介します。
         </p>
       </section>
@@ -120,36 +120,36 @@ export default function SafetyRanking() {
       </section>
 
       {/* ランキング詳細 */}
-      <section className="space-y-6">
-        <h2 className="text-2xl font-bold">ランキング詳細</h2>
+      <section className="space-y-4 md:space-y-6">
+        <h2 className="text-lg md:text-xl lg:text-2xl font-bold">ランキング詳細</h2>
         
         {vendors.map((vendor) => (
-          <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-6">
+          <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-4 md:p-6">
             <div className="flex items-start gap-4">
-              <div className="text-4xl font-bold text-primary-600">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-600">
                 {vendor.rank === 1 && '🥇'}
                 {vendor.rank === 2 && '🥈'}
                 {vendor.rank === 3 && '🥉'}
                 {vendor.rank > 3 && vendor.rank}
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">{vendor.name}</h3>
-                <div className="grid md:grid-cols-3 gap-4 mb-4">
+                <h3 className="text-lg md:text-xl lg:text-2xl text-base md:text-lg font-bold mb-2">{vendor.name}</h3>
+                <div className="grid md:grid-cols-3 gap-3 md:gap-4 mb-4">
                   <div>
-                    <span className="text-gray-600 text-sm">古物商許可番号</span>
+                    <span className="text-gray-600 text-xs md:text-sm">古物商許可番号</span>
                     <div className="text-sm font-bold text-blue-600">{vendor.license}</div>
                   </div>
                   <div>
-                    <span className="text-gray-600 text-sm">運営実績</span>
+                    <span className="text-gray-600 text-xs md:text-sm">運営実績</span>
                     <div className="text-lg font-bold">{vendor.years}</div>
                   </div>
                   <div>
-                    <span className="text-gray-600 text-sm">安全性</span>
+                    <span className="text-gray-600 text-xs md:text-sm">安全性</span>
                     <div className="text-lg">{vendor.safety}</div>
                   </div>
                 </div>
                 <div className="mb-4">
-                  <h4 className="font-bold mb-2">安全性の特徴</h4>
+                  <h4 className="text-base md:text-lg font-bold mb-2">安全性の特徴</h4>
                   <ul className="space-y-1">
                     {vendor.features.map((feature, index) => (
                       <li key={index} className="text-gray-700 flex items-center gap-2">
@@ -161,7 +161,7 @@ export default function SafetyRanking() {
                 </div>
                 <a 
                   href={vendor.link}
-                  className="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition"
+                  className="inline-block bg-primary-600 text-white px-4 md:px-6 py-3 md:py-2 rounded-lg text-sm md:text-base min-h-[44px] flex items-center justify-center hover:bg-primary-700 transition"
                 >
                   詳細を見る
                 </a>
@@ -173,7 +173,7 @@ export default function SafetyRanking() {
 
       {/* 悪徳業者の見分け方 */}
       <section className="bg-red-50 border-l-4 border-red-400 p-6 rounded">
-        <h2 className="text-xl font-bold mb-4 text-red-700">❌ 危険な業者の特徴</h2>
+        <h2 className="text-base md:text-lg lg:text-xl font-bold mb-4 text-red-700">❌ 危険な業者の特徴</h2>
         <ul className="space-y-2 text-gray-700">
           <li className="flex items-start gap-2">
             <span className="text-red-600">✗</span>
@@ -206,24 +206,24 @@ export default function SafetyRanking() {
       </section>
 
       {/* 古物商許可番号の確認方法 */}
-      <section className="bg-gray-50 rounded-lg p-6">
-        <h2 className="text-2xl font-bold mb-4">古物商許可番号の確認方法</h2>
-        <div className="space-y-4">
+      <section className="bg-gray-50 rounded-lg p-4 md:p-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">古物商許可番号の確認方法</h2>
+        <div className="space-y-3 md:space-y-4">
           <div>
-            <h3 className="font-bold mb-2">1. 公式サイトのフッターを確認</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">1. 公式サイトのフッターを確認</h3>
+            <p className="text-sm md:text-base text-gray-700">
               多くの業者は、公式サイトの最下部（フッター）または「会社概要」「特定商取引法に基づく表記」ページに古物商許可番号を記載しています。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">2. 警察署で許可番号の真偽を確認</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">2. 警察署で許可番号の真偽を確認</h3>
+            <p className="text-sm md:text-base text-gray-700">
               管轄の警察署に電話し、「古物商許可番号の確認をお願いします」と伝えれば、許可番号が実在するか教えてもらえます。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">3. 国税庁法人番号公表サイトで会社を確認</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">3. 国税庁法人番号公表サイトで会社を確認</h3>
+            <p className="text-sm md:text-base text-gray-700">
               <a href="https://www.houjin-bangou.nta.go.jp/" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:underline">
                 国税庁法人番号公表サイト
               </a>
@@ -234,24 +234,24 @@ export default function SafetyRanking() {
       </section>
 
       {/* よくある質問 */}
-      <section className="bg-gray-50 rounded-lg p-6 mt-6">
-        <h2 className="text-2xl font-bold mb-4">よくある質問</h2>
-        <div className="space-y-4">
+      <section className="bg-gray-50 rounded-lg p-4 md:p-6 mt-6">
+        <h2 className="text-lg md:text-xl lg:text-lg md:text-xl lg:text-2xl font-bold mb-3 md:mb-4">よくある質問</h2>
+        <div className="space-y-3 md:space-y-4">
           <div>
-            <h3 className="font-bold mb-2">Q. 古物商許可番号がない業者は違法ですか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. 古物商許可番号がない業者は違法ですか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. はい、商品券・ギフトカードの買取には古物商許可が必須です。許可番号の記載がない業者は無許可営業の可能性が高いため、絶対に利用しないでください。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Q. 運営実績が長い業者の方が安全ですか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. 運営実績が長い業者の方が安全ですか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. はい、運営実績が長い業者は信頼性が高い傾向にあります。開設直後の業者は実績が確認できないため、リスクが高いです。
             </p>
           </div>
           <div>
-            <h3 className="font-bold mb-2">Q. 口コミはどこで確認すればいいですか？</h3>
-            <p className="text-gray-700">
+            <h3 className="text-base md:text-lg font-bold mb-2">Q. 口コミはどこで確認すればいいですか？</h3>
+            <p className="text-sm md:text-base text-gray-700">
               A. Google検索、Twitter（X）、5ちゃんねる、Yahoo!知恵袋など、複数のサイトで口コミを確認しましょう。1つのサイトだけでは判断できません。
             </p>
           </div>
@@ -259,22 +259,22 @@ export default function SafetyRanking() {
       </section>
 
       {/* 内部リンク */}
-      <section className="grid md:grid-cols-2 gap-4">
-        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-sm">おすすめの先払い買取業者TOP10</p>
+      <section className="grid grid-cols-2 gap-2 md:gap-4">
+        <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">総合ランキング →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP10</p>
         </a>
-        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">悪徳業者の見分け方 →</h3>
-          <p className="text-gray-600 text-sm">10項目チェックリストと実際のトラブル事例</p>
+        <a href="/safety/check" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">悪徳業者の見分け方 →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">10項目チェックリストと実際のトラブル事例</p>
         </a>
-        <a href="/safety/legal" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">違法性について →</h3>
-          <p className="text-gray-600 text-sm">法的根拠と金融庁の見解を徹底解説</p>
+        <a href="/safety/legal" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">違法性について →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">法的根拠と金融庁の見解を徹底解説</p>
         </a>
-        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-          <h3 className="font-bold mb-2">先払い買取とは →</h3>
-          <p className="text-gray-600 text-sm">仕組み・流れをわかりやすく解説</p>
+        <a href="/guide/about" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
+          <h3 className="text-base md:text-lg font-bold mb-2">先払い買取とは →</h3>
+          <p className="text-gray-600 text-xs md:text-sm">仕組み・流れをわかりやすく解説</p>
         </a>
       </section>
     </div>
