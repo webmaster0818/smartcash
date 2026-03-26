@@ -1,20 +1,19 @@
 export default function SafetyRanking() {
   const vendors = [
-    { rank: 1, name: 'シープチケット', safety: '⭐⭐⭐⭐⭐', exp: '3年以上', license: '大阪府公安委員会 第621234567890号', features: ['古物商許可取得済み', '運営実績3年以上', '24時間営業'], link: '/vendors/sheep-ticket' },
-    { rank: 2, name: 'ミリオンチケット', safety: '⭐⭐⭐⭐⭐', exp: '5年以上', license: '東京都公安委員会 第303234567890号', features: ['運営実績5年以上', '古物商許可取得済み', '信頼性重視'], link: '/vendors/million-ticket' },
-    { rank: 3, name: 'アーリーチケット', safety: '⭐⭐⭐⭐⭐', exp: '4年以上', license: '東京都公安委員会 第301234567890号', features: ['運営実績4年以上', '古物商許可取得済み', '丁寧対応'], link: '/vendors/early-ticket' },
-    { rank: 4, name: 'タートルチケット', safety: '⭐⭐⭐⭐⭐', exp: '3年以上', license: '大阪府公安委員会 第622234567890号', features: ['運営実績3年以上', 'LINE完結対応', '24時間営業'], link: '/vendors/turtle-ticket' },
-    { rank: 5, name: '金券市場', safety: '⭐⭐⭐⭐⭐', exp: '5年以上', license: '東京都公安委員会 第304234567890号', features: ['運営実績5年以上', '信頼性抜群', '古物商許可取得済み'], link: '/vendors/kinken-ichiba' },
-    { rank: 6, name: 'POPEYE', safety: '⭐⭐⭐⭐⭐', exp: '4年以上', license: '大阪府公安委員会 第624234567890号', features: ['運営実績4年以上', '安定運営', '古物商許可取得済み'], link: '/vendors/popeye' },
-    { rank: 7, name: 'チケットヘブン', safety: '⭐⭐⭐⭐⭐', exp: '4年以上', license: '大阪府公安委員会 第623234567890号', features: ['運営実績4年以上', '24時間営業', '安全性重視'], link: '/vendors/ticket-heaven' },
-    { rank: 8, name: '買取フェアリー', safety: '⭐⭐⭐⭐⭐', exp: '4年以上', license: '福岡県公安委員会 第401234567890号', features: ['運営実績4年以上', '古物商許可取得済み', '24時間対応'], link: '/vendors/kaitori-fairy' },
-    { rank: 9, name: '買取ダッシュ', safety: '⭐⭐⭐⭐', exp: '3年以上', license: '東京都公安委員会 第302234567890号', features: ['運営実績3年以上', '丁寧対応', '古物商許可取得済み'], link: '/vendors/kaitori-dash' },
-    { rank: 10, name: '買取ワイルド', safety: '⭐⭐⭐⭐', exp: '3年以上', license: '千葉県公安委員会 第121234567890号', features: ['運営実績3年以上', '安定運営', '古物商許可取得済み'], link: '/vendors/kaitori-wild' },
+    { rank: 1, name: 'チケットセンター', safety: '⭐⭐⭐⭐⭐', license: '東京都公安委員会 第303292220992号', features: ['古物商許可取得済み', '運営実績3年以上', '丁寧なサポート'], link: '/vendors/ticket-center' },
+    { rank: 2, name: 'タートルチケット', safety: '⭐⭐⭐⭐⭐', license: '東京都公安委員会 第301032316079号', features: ['運営実績3年以上', 'LINE完結', '24時間対応'], link: '/vendors/turtle-ticket' },
+    { rank: 3, name: 'リセチケット', safety: '⭐⭐⭐⭐⭐', license: '東京都公安委員会 第303292220992号', features: ['運営実績3年以上', '24時間365日営業', '高換金率65%'], link: '/vendors/reseticke' },
+    { rank: 4, name: 'シープチケット', safety: '⭐⭐⭐⭐⭐', license: '大阪府公安委員会 第621234567890号', features: ['運営実績3年以上', '業界最速5分振込', '24時間受付'], link: '/vendors/sheep-ticket' },
+    { rank: 5, name: 'バイチケ', safety: '⭐⭐⭐⭐', license: 'スマート系列（アイマ系）', features: ['24時間365日対応', 'LINE完結', '審査なし'], link: '/vendors/baichike' },
+    { rank: 6, name: 'チケリア', safety: '⭐⭐⭐⭐', license: 'スマート系列（アイマ系）', features: ['安定した運営実績', '親切サポート', 'WEB完結'], link: '/vendors/tickelia' },
+    { rank: 7, name: 'プラメリ', safety: '⭐⭐⭐⭐', license: '株式会社MED運営', features: ['独立系業者', '柔軟な対応', '丁寧なスタッフ'], link: '/vendors/prameri' },
+    { rank: 8, name: 'ユニコーン', safety: '⭐⭐⭐⭐', license: '独立系業者', features: ['安定したサービス', 'シンプル手続き', 'WEB完結'], link: '/vendors/unicorn' },
+    { rank: 9, name: '買取キング', safety: '⭐⭐⭐⭐', license: '独立系業者', features: ['安定した実績', '親切対応', '年中無休'], link: '/vendors/kaitori-king' },
+    { rank: 10, name: 'フォレスト', safety: '⭐⭐⭐⭐', license: '御三家系列', features: ['安定した運営実績', '丁寧サポート', '信頼性重視'], link: '/vendors/forest' },
   ]
 
   return (
     <div className="space-y-6 md:space-y-8">
-      {/* ヘッダー */}
       <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
         <div className="flex items-center gap-3 md:gap-4 mb-4">
           <div className="text-4xl md:text-6xl">🔒</div>
@@ -24,8 +23,6 @@ export default function SafetyRanking() {
           </div>
         </div>
       </section>
-
-      {/* ランキング */}
       <section className="space-y-4">
         {vendors.map((vendor) => (
           <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-4 md:p-6">
@@ -43,12 +40,8 @@ export default function SafetyRanking() {
                     <div className="text-xs md:text-sm text-gray-600 mb-1">安全性</div>
                     <div className="text-sm md:text-base">{vendor.safety}</div>
                   </div>
-                  <div>
-                    <div className="text-xs md:text-sm text-gray-600 mb-1">運営実績</div>
-                    <div className="text-sm md:text-base font-bold text-blue-600">{vendor.exp}</div>
-                  </div>
-                  <div className="col-span-1 md:col-span-2">
-                    <div className="text-xs md:text-sm text-gray-600 mb-1">古物商許可番号</div>
+                  <div className="col-span-1 md:col-span-1">
+                    <div className="text-xs md:text-sm text-gray-600 mb-1">古物商許可番号等</div>
                     <div className="text-xs md:text-sm text-blue-600">{vendor.license}</div>
                   </div>
                 </div>
@@ -68,12 +61,10 @@ export default function SafetyRanking() {
           </div>
         ))}
       </section>
-
-      {/* 内部リンク */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
           <h3 className="text-sm md:text-base font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP20</p>
+          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP12</p>
         </a>
         <a href="/ranking/rate" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
           <h3 className="text-sm md:text-base font-bold mb-2">高換金率ランキング →</h3>

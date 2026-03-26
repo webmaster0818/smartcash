@@ -1,31 +1,28 @@
 export default function RateRanking() {
   const vendors = [
-    { rank: 1, name: 'シープチケット', rate: '最大95%', speed: '最短5分', hours: '24時間', features: ['業界最高水準95%', '最短5分振込', '24時間営業'], link: '/vendors/sheep-ticket' },
-    { rank: 2, name: 'アーリーチケット', rate: '最大93%', speed: '最短5分', hours: '9:00-22:00', features: ['トップクラス93%', '実績4年', '最短5分振込'], link: '/vendors/early-ticket' },
-    { rank: 3, name: 'ミリオンチケット', rate: '最大92%', speed: '最短7分', hours: '24時間', features: ['高換金率92%', '実績5年', '24時間対応'], link: '/vendors/million-ticket' },
-    { rank: 4, name: 'リゼロカイトリ', rate: '最大91%', speed: '最短7分', hours: '24時間', features: ['高換金率91%', '24時間営業', '実績2年'], link: '/vendors/rizero-kaitori' },
-    { rank: 5, name: 'タートルチケット', rate: '最大90%', speed: '最短10分', hours: '24時間', features: ['高換金率90%', 'LINE完結', '実績3年'], link: '/vendors/turtle-ticket' },
-    { rank: 6, name: '買取フェアリー', rate: '最大90%', speed: '最短5分', hours: '24時間', features: ['高換金率90%', '最短5分振込', '実績4年'], link: '/vendors/kaitori-fairy' },
-    { rank: 7, name: 'チケットヘブン', rate: '最大90%', speed: '最短7分', hours: '24時間', features: ['高換金率90%', '実績4年', '24時間対応'], link: '/vendors/ticket-heaven' },
-    { rank: 8, name: '買取ダッシュ', rate: '最大89%', speed: '最短10分', hours: '9:00-21:00', features: ['高換金率89%', '実績3年', 'スピード対応'], link: '/vendors/kaitori-dash' },
-    { rank: 9, name: '買取ワイルド', rate: '最大89%', speed: '最短10分', hours: '9:00-22:00', features: ['高換金率89%', '実績3年', '丁寧対応'], link: '/vendors/kaitori-wild' },
-    { rank: 10, name: '金券市場', rate: '最大89%', speed: '最短10分', hours: '9:00-22:00', features: ['高換金率89%', '実績5年', '信頼性重視'], link: '/vendors/kinken-ichiba' },
+    { rank: 1, name: 'チケットセンター', rate: '最大65%', speed: '最短10分', hours: '10:00-19:00', features: ['換金率65%と高水準', '初めての方に最適', '丁寧なサポート'], link: '/vendors/ticket-center' },
+    { rank: 2, name: 'リセチケット', rate: '最大65%', speed: '最短10分', hours: '24時間', features: ['24時間365日営業', 'LINE完結', '高換金率65%'], link: '/vendors/reseticke' },
+    { rank: 3, name: 'タートルチケット', rate: '最大60%', speed: '最短10分', hours: '10:00-19:30', features: ['最大30万円対応', 'LINE完結', '高額買取に強い'], link: '/vendors/turtle-ticket' },
+    { rank: 4, name: 'シープチケット', rate: '最大60%', speed: '最短5分', hours: '24時間', features: ['業界最速クラス', '24時間受付', '土日祝も営業'], link: '/vendors/sheep-ticket' },
+    { rank: 5, name: 'バイチケ', rate: '最大60%', speed: '最短10分', hours: '24時間', features: ['24時間365日対応', 'LINE完結', '審査なし'], link: '/vendors/baichike' },
+    { rank: 6, name: 'チケリア', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', features: ['シンプル手続き', '親切サポート', 'WEB完結'], link: '/vendors/tickelia' },
+    { rank: 7, name: 'プラメリ', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', features: ['独自査定基準', '柔軟な対応', '丁寧なスタッフ'], link: '/vendors/prameri' },
+    { rank: 8, name: 'ユニコーン', rate: '最大60%', speed: '最短10分', hours: '10:00-19:00', features: ['丁寧な接客', 'シンプル手続き', 'WEB完結'], link: '/vendors/unicorn' },
+    { rank: 9, name: '買取キング', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', features: ['安定した実績', '親切対応', '年中無休'], link: '/vendors/kaitori-king' },
+    { rank: 10, name: 'フォレスト', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', features: ['丁寧サポート', '分かりやすい説明', '信頼性重視'], link: '/vendors/forest' },
   ]
 
   return (
     <div className="space-y-6 md:space-y-8">
-      {/* ヘッダー */}
       <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
         <div className="flex items-center gap-3 md:gap-4 mb-4">
           <div className="text-4xl md:text-6xl">💰</div>
           <div>
             <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 leading-tight">高換金率ランキングTOP10【2026年最新版】</h1>
-            <p className="text-sm md:text-base text-gray-700">換金率89%〜95%の高換金率業者を厳選</p>
+            <p className="text-sm md:text-base text-gray-700">換金率60%〜65%の高換金率業者を厳選</p>
           </div>
         </div>
       </section>
-
-      {/* ランキング */}
       <section className="space-y-4">
         {vendors.map((vendor) => (
           <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-4 md:p-6">
@@ -68,12 +65,10 @@ export default function RateRanking() {
           </div>
         ))}
       </section>
-
-      {/* 内部リンク */}
       <section className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         <a href="/ranking/overall" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
           <h3 className="text-sm md:text-base font-bold mb-2">総合ランキング →</h3>
-          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP20</p>
+          <p className="text-gray-600 text-xs md:text-sm">おすすめの先払い買取業者TOP12</p>
         </a>
         <a href="/ranking/speed" className="block bg-white p-4 rounded-lg shadow hover:shadow-lg transition min-h-[80px]">
           <h3 className="text-sm md:text-base font-bold mb-2">最短振込ランキング →</h3>
