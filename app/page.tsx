@@ -172,6 +172,17 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* 記事一覧リンク */}
+      <section className="text-center p-4 md:p-6 border-2 border-primary-600 rounded-lg">
+        <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">すべての記事を見る</h2>
+        <p className="text-sm md:text-base text-gray-700 mb-4">
+          業者詳細・ランキング・ガイド記事など全35ページを一覧でご確認いただけます
+        </p>
+        <a href="/articles" className="inline-block bg-primary-600 text-white px-6 md:px-8 py-3 rounded-lg hover:bg-primary-700 transition text-sm md:text-base font-bold">
+          記事一覧ページへ →
+        </a>
+      </section>
     </div>
   )
 }
