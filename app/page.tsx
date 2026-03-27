@@ -1,9 +1,9 @@
 export default function Home() {
   const vendors = [
-    { rank: 1, name: 'チケットセンター', emoji: '🎫', rate: '最大65%', speed: '最短10分', hours: '10:00-19:00', link: '/vendors/ticket-center' },
-    { rank: 2, name: 'タートルチケット', emoji: '🐢', rate: '最大60%', speed: '最短10分', hours: '10:00-19:30', link: '/vendors/turtle-ticket' },
-    { rank: 3, name: 'リセチケット', emoji: '🔄', rate: '最大65%', speed: '最短10分', hours: '24時間', link: '/vendors/reseticke' },
-    { rank: 4, name: 'シープチケット', emoji: '🐑', rate: '最大60%', speed: '最短5分', hours: '24時間', link: '/vendors/sheep-ticket' },
+    { rank: 1, name: 'チケットセンター', emoji: '🎫', rate: '最大65%', speed: '最短10分', hours: '10:00-19:00', link: '/vendors/ticket-center', image: '/images/vendors/ticket-center.jpg' },
+    { rank: 2, name: 'タートルチケット', emoji: '🐢', rate: '最大60%', speed: '最短10分', hours: '10:00-19:30', link: '/vendors/turtle-ticket', image: '/images/vendors/turtle-ticket.jpg' },
+    { rank: 3, name: 'リセチケット', emoji: '🔄', rate: '最大65%', speed: '最短10分', hours: '24時間', link: '/vendors/reseticke', image: '/images/vendors/reseticke.svg' },
+    { rank: 4, name: 'シープチケット', emoji: '🐑', rate: '最大60%', speed: '最短5分', hours: '24時間', link: '/vendors/sheep-ticket', image: '/images/vendors/sheep-ticket.png' },
     { rank: 5, name: 'バイチケ', emoji: '🎟️', rate: '最大60%', speed: '最短10分', hours: '24時間', link: '/vendors/baichike' },
     { rank: 6, name: 'チケリア', emoji: '🎪', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', link: '/vendors/tickelia' },
     { rank: 7, name: 'プラメリ', emoji: '💎', rate: '最大60%', speed: '最短10分', hours: '9:00-19:00', link: '/vendors/prameri' },
@@ -54,8 +54,14 @@ export default function Home() {
                 <tr key={vendor.rank} className={index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}>
                   <td className="px-4 py-3 font-bold text-primary-600 text-sm lg:text-base">{vendor.rank}位</td>
                   <td className="px-4 py-3 text-sm lg:text-base">
-                    <span className="text-xl mr-2">{vendor.emoji}</span>
-                    {vendor.name}
+                    <div className="flex items-center gap-3">
+                      {vendor.image ? (
+                        <img src={vendor.image} alt={vendor.name} className="w-12 h-12 object-cover rounded" />
+                      ) : (
+                        <span className="text-xl">{vendor.emoji}</span>
+                      )}
+                      <span>{vendor.name}</span>
+                    </div>
                   </td>
                   <td className="px-4 py-3 font-bold text-green-600 text-sm lg:text-base">{vendor.rate}</td>
                   <td className="px-4 py-3 font-bold text-red-600 text-sm lg:text-base">{vendor.speed}</td>
@@ -75,6 +81,11 @@ export default function Home() {
         <div className="md:hidden space-y-4">
           {vendors.map((vendor) => (
             <div key={vendor.rank} className="bg-white p-4 rounded-lg shadow">
+              {vendor.image && (
+                <div className="mb-3 rounded-lg overflow-hidden">
+                  <img src={vendor.image} alt={vendor.name} className="w-full h-auto" />
+                </div>
+              )}
               <div className="flex items-center gap-3 mb-3">
                 <div className="text-2xl">{vendor.emoji}</div>
                 <div className="flex-1">
