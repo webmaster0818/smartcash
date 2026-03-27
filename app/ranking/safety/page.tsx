@@ -14,6 +14,16 @@ export default function SafetyRanking() {
 
   return (
     <div className="space-y-6 md:space-y-8">
+      {/* パンくずリスト */}
+      <nav className="text-sm text-gray-600" aria-label="パンくずリスト">
+        <ol className="flex items-center gap-2 flex-wrap">
+          <li><a href="/" className="hover:text-primary-600 transition">🏠 ホーム</a></li>
+          <li>›</li>
+          <li><a href="/ranking/overall" className="hover:text-primary-600 transition">ランキング</a></li>
+          <li>›</li>
+          <li className="text-primary-600 font-semibold">安全性重視ランキング | 先払い買取業者比較</li>
+        </ol>
+      </nav>
       <section className="relative bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>

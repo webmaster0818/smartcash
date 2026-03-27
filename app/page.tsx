@@ -16,6 +16,14 @@ export default function Home() {
 
   return (
     <div className="space-y-8 md:space-y-12">
+      {/* パンくずリスト */}
+      <nav className="text-sm text-gray-600" aria-label="パンくずリスト">
+        <ol className="flex items-center gap-2">
+          <li><a href="/" className="hover:text-primary-600 transition">🏠 ホーム</a></li>
+          <li>›</li>
+          <li className="text-primary-600 font-semibold">先払い買取業者比較</li>
+        </ol>
+      </nav>
       {/* Hero Section - 強化版 */}
       <section className="relative text-center py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 rounded-3xl px-6 md:px-12 overflow-hidden shadow-2xl">
         {/* 背景装飾 */}
@@ -69,7 +77,7 @@ export default function Home() {
                   <td className="px-6 py-5 text-sm lg:text-base">
                     <div className="flex items-center gap-4">
                       {vendor.image ? (
-                        <img src={vendor.image} alt={vendor.name} className="w-16 h-16 object-cover rounded-lg shadow-md" />
+                        <img src={vendor.image} alt={`${vendor.name}の先払い買取サービス`} className="w-16 h-16 object-cover rounded-lg shadow-md" loading="lazy" />
                       ) : (
                         <span className="text-2xl">{vendor.emoji}</span>
                       )}
@@ -96,7 +104,7 @@ export default function Home() {
             <div key={vendor.rank} className="bg-gradient-to-br from-white to-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
               {vendor.image && (
                 <div className="mb-4 rounded-xl overflow-hidden shadow-md">
-                  <img src={vendor.image} alt={vendor.name} className="w-full h-auto" />
+                  <img src={vendor.image} alt={`${vendor.name}の先払い買取サービス`} className="w-full h-auto" loading="lazy" />
                 </div>
               )}
               <div className="flex items-center gap-4 mb-4">
@@ -200,15 +208,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 記事一覧リンク */}
-      <section className="text-center p-4 md:p-6 border-2 border-primary-600 rounded-lg">
-        <h2 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">すべての記事を見る</h2>
-        <p className="text-sm md:text-base text-gray-700 mb-4">
-          業者詳細・ランキング・ガイド記事など全35ページを一覧でご確認いただけます
-        </p>
-        <a href="/articles" className="inline-block bg-primary-600 text-white px-6 md:px-8 py-3 rounded-lg hover:bg-primary-700 transition text-sm md:text-base font-bold">
-          記事一覧ページへ →
-        </a>
+      {/* 関連記事・FAQ */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="text-center p-6 bg-gradient-to-br from-primary-50 to-white border-2 border-primary-600 rounded-2xl shadow-lg">
+          <h2 className="text-xl md:text-2xl font-bold mb-3">📚 すべての記事を見る</h2>
+          <p className="text-sm md:text-base text-gray-700 mb-4">
+            業者詳細・ランキング・ガイド記事など全36ページを一覧でご確認いただけます
+          </p>
+          <a href="/articles" className="inline-block bg-primary-600 text-white px-6 md:px-8 py-3 rounded-lg hover:bg-primary-700 transition text-sm md:text-base font-bold shadow-md hover:shadow-xl transform hover:scale-105 duration-300">
+            記事一覧ページへ →
+          </a>
+        </div>
+        <div className="text-center p-6 bg-gradient-to-br from-yellow-50 to-white border-2 border-yellow-400 rounded-2xl shadow-lg">
+          <h2 className="text-xl md:text-2xl font-bold mb-3">❓ よくある質問</h2>
+          <p className="text-sm md:text-base text-gray-700 mb-4">
+            先払い買取に関する疑問・不安を解消するFAQページ
+          </p>
+          <a href="/faq" className="inline-block bg-yellow-500 text-white px-6 md:px-8 py-3 rounded-lg hover:bg-yellow-600 transition text-sm md:text-base font-bold shadow-md hover:shadow-xl transform hover:scale-105 duration-300">
+            FAQページへ →
+          </a>
+        </div>
       </section>
     </div>
   )

@@ -1,0 +1,35 @@
+# robots.txt for マネーガイドジャーナル（先払い買取比較サイト）
+
+User-agent: *
+Allow: /
+
+# 主要ページ
+Allow: /ranking/
+Allow: /vendors/
+Allow: /guide/
+Allow: /item/
+Allow: /safety/
+Allow: /articles
+
+# サイトマップ
+Sitemap: https://webmaster0818.github.io/smartcash-deploy/sitemap.xml
+
+# クローラー向けディレクティブ
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# 悪質なボット対策
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
