@@ -76,7 +76,7 @@ export default function Articles() {
       <section className="text-center py-8 md:py-12 bg-gradient-to-r from-primary-50 to-primary-100 rounded-lg px-4">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">記事一覧</h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700">
-          スマートキャッシュの全コンテンツを一覧でご確認いただけます
+          マネーガイドジャーナルの全コンテンツを一覧でご確認いただけます
         </p>
       </section>
 

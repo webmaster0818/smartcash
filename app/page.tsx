@@ -18,7 +18,7 @@ export default function Home() {
     <div className="space-y-8 md:space-y-12">
       {/* Hero Section */}
       <section className="text-center py-8 md:py-12 bg-gradient-to-r from-primary-50 to-primary-100 rounded-lg px-4">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">スマートキャッシュへようこそ</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">マネーガイドジャーナルへようこそ</h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-6 md:mb-8">
           商品券・ギフトカードの先払い買取業者を徹底比較
         </p>

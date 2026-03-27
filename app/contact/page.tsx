@@ -5,7 +5,7 @@ export default function Contact() {
       <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4">お問い合わせ</h1>
         <p className="text-sm md:text-base text-gray-700">
-          スマートキャッシュに関するご質問・ご意見・ご要望などございましたら、お気軽にお問い合わせください。
+          マネーガイドジャーナルに関するご質問・ご意見・ご要望などございましたら、お気軽にお問い合わせください。
         </p>
       </section>
 
