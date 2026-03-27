@@ -14,34 +14,46 @@ export default function SafetyRanking() {
 
   return (
     <div className="space-y-6 md:space-y-8">
-      <section className="bg-gradient-to-r from-primary-50 to-primary-100 p-4 md:p-8 rounded-lg">
-        <div className="flex items-center gap-3 md:gap-4 mb-4">
-          <div className="text-4xl md:text-6xl">🔒</div>
+      <section className="relative bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 p-8 md:p-12 lg:p-16 rounded-3xl shadow-2xl overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/20 rounded-full blur-3xl"></div>
+        <div className="relative z-10 flex items-center gap-4 md:gap-6">
+          <div className="text-6xl md:text-8xl lg:text-9xl transition-transform duration-300 hover:scale-110 hover:rotate-12">🔒</div>
           <div>
-            <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-1 md:mb-2 leading-tight">安全性重視ランキングTOP10【2026年最新版】</h1>
-            <p className="text-sm md:text-base text-gray-700">古物商許可取得済みで運営実績のある業者を厳選</p>
+            <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-black mb-2 md:mb-3 text-white drop-shadow-lg leading-tight">
+              安全性重視ランキングTOP10
+            </h1>
+            <p className="text-base md:text-xl lg:text-2xl text-white/95 font-semibold">
+              🔒 古物商許可取得済みで運営実績のある業者を厳選【2026年最新版】
+            </p>
           </div>
         </div>
       </section>
-      <section className="space-y-4">
+      <section className="space-y-6">
         {vendors.map((vendor) => (
-          <div key={vendor.rank} className="bg-white rounded-lg shadow-md p-4 md:p-6">
+          <div key={vendor.rank} className="bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 p-6 md:p-8 border border-gray-100 transform hover:-translate-y-1">
             <div className="flex items-center gap-4 mb-4">
-              <div className="text-3xl md:text-4xl font-bold text-primary-600">
+              <div className="text-4xl md:text-5xl font-bold text-primary-600 transition-transform duration-300 hover:scale-110">
                 {vendor.rank === 1 && '🥇'}
                 {vendor.rank === 2 && '🥈'}
                 {vendor.rank === 3 && '🥉'}
                 {vendor.rank > 3 && <span className="text-2xl md:text-3xl">{vendor.rank}位</span>}
               </div>
               <div className="flex-1">
-                <h2 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">{vendor.name}</h2>
+                <h2 className="text-xl md:text-2xl lg:text-3xl font-black mb-3 bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent">{vendor.name}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  <div>
-                    <div className="text-xs md:text-sm text-gray-600 mb-1">安全性</div>
-                    <div className="text-sm md:text-base">{vendor.safety}</div>
+                  <div className="bg-white p-3 rounded-lg shadow-sm">
+                    <div className="flex items-center gap-1 text-xs md:text-sm text-gray-600 mb-1">
+                      <span className="text-base">🔒</span>
+                      <span>安全性</span>
+                    </div>
+                    <div className="text-sm md:text-base font-bold">{vendor.safety}</div>
                   </div>
-                  <div className="col-span-1 md:col-span-1">
-                    <div className="text-xs md:text-sm text-gray-600 mb-1">古物商許可番号等</div>
+                  <div className="col-span-1 md:col-span-1 bg-white p-3 rounded-lg shadow-sm">
+                    <div className="flex items-center gap-1 text-xs md:text-sm text-gray-600 mb-1">
+                      <span className="text-base">📜</span>
+                      <span>古物商許可番号等</span>
+                    </div>
                     <div className="text-xs md:text-sm text-blue-600">{vendor.license}</div>
                   </div>
                 </div>
@@ -55,8 +67,8 @@ export default function SafetyRanking() {
                 ))}
               </ul>
             </div>
-            <a href={vendor.link} className="block bg-primary-600 text-white text-center px-4 py-3 rounded-lg hover:bg-primary-700 transition text-sm md:text-base font-bold">
-              詳細を見る →
+            <a href={vendor.link} className="block bg-gradient-to-r from-primary-600 to-primary-700 text-white text-center px-6 py-4 rounded-xl hover:from-primary-700 hover:to-primary-800 transition-all duration-300 text-base md:text-lg font-bold shadow-lg hover:shadow-2xl transform hover:scale-105">
+              📄 詳細を見る →
             </a>
           </div>
         ))}

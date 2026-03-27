@@ -16,37 +16,50 @@ export default function Home() {
 
   return (
     <div className="space-y-8 md:space-y-12">
-      {/* Hero Section */}
-      <section className="text-center py-8 md:py-12 bg-gradient-to-r from-primary-50 to-primary-100 rounded-lg px-4">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">マネーガイドジャーナルへようこそ</h1>
-        <p className="text-base md:text-lg lg:text-xl text-gray-700 mb-6 md:mb-8">
-          商品券・ギフトカードの先払い買取業者を徹底比較
-        </p>
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-          <a href="/ranking/overall" className="inline-block bg-primary-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-primary-700 transition text-sm md:text-base lg:text-lg font-bold min-h-[48px] flex items-center justify-center">
-            総合ランキングを見る
-          </a>
-          <a href="/guide/about" className="inline-block bg-white text-primary-600 border-2 border-primary-600 px-6 md:px-8 py-3 md:py-4 rounded-lg hover:bg-primary-50 transition text-sm md:text-base lg:text-lg font-bold min-h-[48px] flex items-center justify-center">
-            先払い買取とは？
-          </a>
+      {/* Hero Section - 強化版 */}
+      <section className="relative text-center py-16 md:py-24 lg:py-32 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 rounded-3xl px-6 md:px-12 overflow-hidden shadow-2xl">
+        {/* 背景装飾 */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+        
+        {/* コンテンツ */}
+        <div className="relative z-10">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-6 md:mb-8 text-white drop-shadow-lg leading-tight">
+            マネーガイドジャーナル
+          </h1>
+          <p className="text-lg md:text-2xl lg:text-3xl text-white/95 mb-8 md:mb-12 font-semibold max-w-4xl mx-auto leading-relaxed">
+            商品券・ギフトカードの先払い買取業者を徹底比較<br className="hidden md:block" />
+            <span className="text-yellow-300">最大65%の換金率、最短5分で振込</span>
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
+            <a href="/ranking/overall" className="inline-block bg-white text-primary-700 px-8 md:px-12 py-4 md:py-5 rounded-xl hover:bg-yellow-50 transition-all duration-300 text-base md:text-lg lg:text-xl font-bold shadow-xl hover:shadow-2xl transform hover:scale-105 min-h-[56px] flex items-center justify-center">
+              🏆 総合ランキングを見る
+            </a>
+            <a href="/guide/about" className="inline-block bg-transparent text-white border-3 border-white px-8 md:px-12 py-4 md:py-5 rounded-xl hover:bg-white/20 transition-all duration-300 text-base md:text-lg lg:text-xl font-bold min-h-[56px] flex items-center justify-center">
+              📖 先払い買取とは？
+            </a>
+          </div>
         </div>
       </section>
 
       {/* 業者一覧 */}
       <section>
-        <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-6 md:mb-8 text-center">先払い買取業者12社 比較一覧</h2>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-8 md:mb-10 text-center bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent leading-tight">
+          先払い買取業者12社 比較一覧
+        </h2>
         
         {/* PC版：テーブル表示 */}
         <div className="hidden md:block overflow-x-auto bg-white rounded-2xl shadow-xl">
           <table className="w-full">
             <thead className="bg-gradient-to-r from-primary-600 to-primary-700 text-white">
               <tr>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">順位</th>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">業者名</th>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">換金率</th>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">振込時間</th>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">営業時間</th>
-                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">詳細</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">🏅 順位</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">🏢 業者名</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">💰 換金率</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">⚡ 振込時間</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">🕒 営業時間</th>
+                <th className="px-6 py-4 text-left text-sm lg:text-base font-bold">📄 詳細</th>
               </tr>
             </thead>
             <tbody>
@@ -95,15 +108,24 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="bg-white p-3 rounded-lg shadow-sm">
-                  <div className="text-gray-600 text-xs mb-1">換金率</div>
+                  <div className="flex items-center gap-1 text-gray-600 text-xs mb-1">
+                    <span className="text-base">💰</span>
+                    <span>換金率</span>
+                  </div>
                   <div className="font-bold text-green-600 text-base">{vendor.rate}</div>
                 </div>
                 <div className="bg-white p-3 rounded-lg shadow-sm">
-                  <div className="text-gray-600 text-xs mb-1">振込時間</div>
+                  <div className="flex items-center gap-1 text-gray-600 text-xs mb-1">
+                    <span className="text-base">⚡</span>
+                    <span>振込時間</span>
+                  </div>
                   <div className="font-bold text-red-600 text-base">{vendor.speed}</div>
                 </div>
                 <div className="col-span-2 bg-white p-3 rounded-lg shadow-sm">
-                  <div className="text-gray-600 text-xs mb-1">営業時間</div>
+                  <div className="flex items-center gap-1 text-gray-600 text-xs mb-1">
+                    <span className="text-base">🕒</span>
+                    <span>営業時間</span>
+                  </div>
                   <div className="font-bold text-base">{vendor.hours}</div>
                 </div>
               </div>
@@ -116,27 +138,32 @@ export default function Home() {
       </section>
 
       {/* ランキング */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-        <a href="/ranking/overall" className="block bg-gradient-to-br from-yellow-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-yellow-100 hover:border-yellow-300 transform hover:-translate-y-1">
-          <div className="text-4xl md:text-5xl mb-3 md:mb-4">🏆</div>
-          <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">総合ランキング</h3>
-          <p className="text-gray-700 text-sm md:text-base">おすすめTOP12</p>
-        </a>
-        <a href="/ranking/speed" className="block bg-gradient-to-br from-blue-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-blue-100 hover:border-blue-300 transform hover:-translate-y-1">
-          <div className="text-4xl md:text-5xl mb-3 md:mb-4">⚡</div>
-          <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">最短振込ランキング</h3>
-          <p className="text-gray-700 text-sm md:text-base">最短5分のスピード</p>
-        </a>
-        <a href="/ranking/rate" className="block bg-gradient-to-br from-green-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-green-100 hover:border-green-300 transform hover:-translate-y-1">
-          <div className="text-4xl md:text-5xl mb-3 md:mb-4">💰</div>
-          <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">高換金率ランキング</h3>
-          <p className="text-gray-700 text-sm md:text-base">最大65%の換金率</p>
-        </a>
-        <a href="/ranking/safety" className="block bg-gradient-to-br from-purple-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-purple-100 hover:border-purple-300 transform hover:-translate-y-1">
-          <div className="text-4xl md:text-5xl mb-3 md:mb-4">🔒</div>
-          <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">安全性重視ランキング</h3>
-          <p className="text-gray-700 text-sm md:text-base">古物商許可取得業者</p>
-        </a>
+      <section>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black mb-8 md:mb-10 text-center bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent leading-tight">
+          ランキングから探す
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <a href="/ranking/overall" className="group block bg-gradient-to-br from-yellow-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-yellow-100 hover:border-yellow-300 transform hover:-translate-y-2 hover:scale-105">
+            <div className="text-4xl md:text-5xl mb-3 md:mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">🏆</div>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">総合ランキング</h3>
+            <p className="text-gray-700 text-sm md:text-base">おすすめTOP12</p>
+          </a>
+          <a href="/ranking/speed" className="group block bg-gradient-to-br from-blue-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-blue-100 hover:border-blue-300 transform hover:-translate-y-2 hover:scale-105">
+            <div className="text-4xl md:text-5xl mb-3 md:mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">⚡</div>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">最短振込ランキング</h3>
+            <p className="text-gray-700 text-sm md:text-base">最短5分のスピード</p>
+          </a>
+          <a href="/ranking/rate" className="group block bg-gradient-to-br from-green-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-green-100 hover:border-green-300 transform hover:-translate-y-2 hover:scale-105">
+            <div className="text-4xl md:text-5xl mb-3 md:mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">💰</div>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">高換金率ランキング</h3>
+            <p className="text-gray-700 text-sm md:text-base">最大65%の換金率</p>
+          </a>
+          <a href="/ranking/safety" className="group block bg-gradient-to-br from-purple-50 to-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 min-h-[160px] border border-purple-100 hover:border-purple-300 transform hover:-translate-y-2 hover:scale-105">
+            <div className="text-4xl md:text-5xl mb-3 md:mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">🔒</div>
+            <h3 className="text-lg md:text-xl lg:text-2xl font-bold mb-2">安全性重視ランキング</h3>
+            <p className="text-gray-700 text-sm md:text-base">古物商許可取得業者</p>
+          </a>
+        </div>
       </section>
 
       {/* ガイド */}
