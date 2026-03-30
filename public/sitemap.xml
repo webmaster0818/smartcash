@@ -153,7 +153,15 @@
     <priority>0.7</priority>
   </url>
   
-  <!-- 基礎知識（3ページ） -->
+  <!-- ピラーページ（最重要） -->
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/pillar/sakibarai-kaitori-guide</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  
+  <!-- 基礎知識（9ページ） -->
   <url>
     <loc>https://webmaster0818.github.io/smartcash-deploy/guide/about</loc>
     <lastmod>2026-03-27</lastmod>
@@ -172,8 +180,32 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/guide/flow</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/guide/difference</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/guide/cost</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/guide/bank-account</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
   
-  <!-- 安全ガイド（2ページ） -->
+  <!-- 安全ガイド（4ページ） -->
   <url>
     <loc>https://webmaster0818.github.io/smartcash-deploy/safety/check</loc>
     <lastmod>2026-03-27</lastmod>
@@ -185,6 +217,18 @@
     <lastmod>2026-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/safety/trouble</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://webmaster0818.github.io/smartcash-deploy/safety/government</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- その他（7ページ） -->
